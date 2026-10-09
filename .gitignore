@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+zig-out
+.zig-cache
+*.mp4
+apps/web/public/demo/
+apps/mac/frontend/node_modules
+packages/dsp/test/fixtures/*.f32
+apps/web/.cache/
+design/

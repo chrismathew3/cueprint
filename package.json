@@ -1,0 +1,29 @@
+{
+  "name": "cueprint",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "bun run --cwd apps/web dev",
+    "build": "bun run --cwd apps/web build",
+    "typecheck": "tsgo -p tsconfig.json --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "@typescript/native-preview": "7.0.0-dev.20260707.2",
+    "@webgpu/types": "^0.1.74",
+    "vite": "8.3.4"
+  },
+  "description": "Break down any DJ set into transitions you can loop and learn.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrismathew3/cueprint"
+  }
+}

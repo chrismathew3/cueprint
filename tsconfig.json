@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2024", "DOM", "DOM.Iterable", "WebWorker"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": false,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "types": ["@webgpu/types", "vite/client", "bun"],
+    "paths": {
+      "@cueprint/core": ["./packages/core/src/index.ts"],
+      "@cueprint/dsp": ["./packages/dsp/src/index.ts"],
+      "@cueprint/vision": ["./packages/vision/src/index.ts"],
+      "@cueprint/media": ["./packages/media/src/index.ts"],
+      "@cueprint/ui": ["./packages/ui/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "apps/web/src", "apps/web/server"]
+}

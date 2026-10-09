@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schema.native-sdk.dev/app/v1.json",
+    "id": "dev.cueprint.app",
+    "name": "cueprint",
+    "display_name": "Cueprint",
+    "version": "0.1.0",
+    "icons": [
+        "assets/icon.png"
+    ],
+    "platforms": [
+        "macos"
+    ],
+    "permissions": [],
+    "capabilities": [
+        "webview"
+    ],
+    "frontend": {
+        "dist": "frontend/dist",
+        "entry": "index.html",
+        "spa_fallback": true,
+        "dev": {
+            "url": "http://127.0.0.1:5173/",
+            "command": [
+                "bun",
+                "run",
+                "--cwd",
+                "frontend",
+                "dev"
+            ],
+            "ready_path": "/",
+            "timeout_ms": 30000
+        }
+    },
+    "security": {
+        "navigation": {
+            "allowed_origins": [
+                "zero://app",
+                "zero://inline",
+                "http://127.0.0.1:5173"
+            ],
+            "external_links": {
+                "action": "deny"
+            }
+        }
+    },
+    "web_engine": "system",
+    "cef": {
+        "dir": "third_party/cef/macos",
+        "auto_install": false
+    },
+    "windows": [
+        {
+            "label": "main",
+            "title": "Cueprint",
+            "width": 1440,
+            "height": 900,
+            "restore_state": true
+        }
+    ],
+    "description": "Learn a DJ set by taking it apart."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@cueprint/vision",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@cueprint/core": "workspace:*",
+    "@cueprint/media": "workspace:*",
+    "@mediapipe/tasks-vision": "1.1.0",
+    "mediabunny": "1.61.3"
+  }
+}

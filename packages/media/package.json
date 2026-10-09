@@ -1,0 +1,13 @@
+{
+  "name": "@cueprint/media",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@cueprint/core": "workspace:*",
+    "mediabunny": "1.61.3"
+  }
+}
